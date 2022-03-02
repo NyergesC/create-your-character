@@ -4,9 +4,43 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>This is FRONTEND</title>
+	<title>Create Your Character</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
-	<div id="root"></div>
+	<div id="root">
+		<section>
+			<form action="">
+				<div>
+					<label for="nev">Name:</label>
+					<input type="text" name:"nev" id="nev" placeholder="Character's Name">>
+				</div>
+				<div class="dropdown-1">
+					<button onclick="myFunction()" class="dropbtn-1">Gender</button>
+					<div id="myDropdown-1" class="dropdown-content">
+					  <a href="#woman">Woman</a>
+					  <a href="#man">Man</a>
+					</div>
+				</div>
+				<div class="dropdown-2">
+					<button onclick="myFunction()" class="dropbtn-2">Race</button>
+					<div id="myDropdown-2" class="dropdown-content">
+					  <a href="#human">Human</a>
+					  <a href="#dwarf">Dwarf</a>
+					  <a href="#elf">Elf</a>
+					</div>
+				</div>
+				<div class="dropdown-3">
+					<button onclick="myFunction()" class="dropbtn-3">Class</button>
+					<div id="myDropdown-3" class="dropdown-content">
+					  <a href="#warrior">Warrior</a>
+					  <a href="#hunter">Hunter</a>
+					  <a href="#priest">Priest</a>
+					</div>
+				</div>
+			</form>
+		</section>
+	</div>
 </body>
 </html>

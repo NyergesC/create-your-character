@@ -11,19 +11,19 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=EB+Garamond&family=Josefin+Sans&family=Josefin+Slab:wght@100&family=Montserrat:wght@100;300;400;700&family=Nunito&family=Nunito+Sans&family=Playfair+Display:wght@700&family=Poppins:wght@100;400;700&family=Shippori+Antique+B1&family=Staatliches&family=Tangerine&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=EB+Garamond&family=Josefin+Sans&family=Josefin+Slab:wght@100&family=Montserrat:wght@100;300;400;700&family=Nunito&family=Nunito+Sans&family=Orbitron&family=Playfair+Display:wght@700&family=Poppins:wght@100;400;700&family=Shippori+Antique+B1&family=Staatliches&family=Tangerine&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=EB+Garamond&family=Josefin+Sans&family=Josefin+Slab:wght@100&family=Montserrat:wght@100;300;400;700&family=Nunito&family=Nunito+Sans&family=Orbitron&family=Playfair+Display:wght@700&family=Poppins:wght@100;400;700&family=Shippori+Antique+B1&family=Staatliches&family=Tangerine&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="root">
 			<div class="container">
 				<div class="label">
-					<label for="nev">Name:</label>
-					<input type="text" name="nev" id="nev" placeholder="Character's name"> 
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" placeholder="Character's name"> 
 				</div>
 				<div>
 					<p>Gender:</p>
-					<select id="list" onchange="getSelectValue();">
+					<select id="list-1" onchange="getSelectValue();">
 						<option value="Gender">Choose a gender</option>
 						<option value="Female">Female</option>
 						<option value="Male">Male</option>
@@ -31,7 +31,7 @@
 				</div>
 				<div>
 					<p>Race:</p>
-					<select id="list" onchange="getSelectValue();">
+					<select id="list-2" onchange="getSelectValue();">
 						<option value="Race">Choose a race</option>
 						<option value="Cat-anoid">Cat-anoid</option>
 						<option value="Cat-dwarf">Cat-dwarf</option>
@@ -40,7 +40,7 @@
 				</div>
 				<div>
 					<p>Class:</p>
-					<select id="list" onchange="getSelectValue();">
+					<select id="list-3" onchange="getSelectValue();">
 						<option value="class">Choose a class</option>
 						<option value="Cat-Warrior">Cat-Warrior</option>
 						<option value="Cat-Hunter">Cat-Hunter</option>
@@ -51,6 +51,7 @@
 			<div>
 				<img src="cat.jpg" alt="character">
 			</div>	
+			<p id="values"></p>
 	</div>
 </body>
 </html>

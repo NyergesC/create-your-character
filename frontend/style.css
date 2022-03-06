@@ -108,5 +108,23 @@
       font-size: 18px;
   }
 
+  .ertekek img{
+    width: 100px;
+    display: block;
+    visibility: hidden;
+  }
+
+  .ertekek{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    width: 100px;
+  }
+
+  .visible {
+    visibility: visible !important;
+  }
+ 
+
+
  
 

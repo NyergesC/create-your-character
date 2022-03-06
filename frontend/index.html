@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Create Your Character</title>
-	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=EB+Garamond&family=Josefin+Sans&family=Josefin+Slab:wght@100&family=Montserrat:wght@100;300;400;700&family=Nunito&family=Nunito+Sans&family=Playfair+Display:wght@700&family=Poppins:wght@100;400;700&family=Shippori+Antique+B1&family=Staatliches&family=Tangerine&display=swap" rel="stylesheet">
@@ -16,42 +16,53 @@
 </head>
 <body>
 	<div id="root">
-			<div class="container">
-				<div class="label">
-					<label for="name">Name:</label>
-					<input type="text" name="name" id="name" placeholder="Character's name"> 
-				</div>
-				<div>
-					<p>Gender:</p>
-					<select id="list-1" onchange="getSelectValue();">
-						<option value="Gender">Choose a gender</option>
-						<option value="Female">Female</option>
-						<option value="Male">Male</option>
-					</select>
-				</div>
-				<div>
-					<p>Race:</p>
-					<select id="list-2" onchange="getSelectValue();">
-						<option value="Race">Choose a race</option>
-						<option value="Cat-anoid">Cat-anoid</option>
-						<option value="Cat-dwarf">Cat-dwarf</option>
-						<option value="Cat-Elf">Cat-Elf</option>
-					</select>
-				</div>
-				<div>
-					<p>Class:</p>
-					<select id="list-3" onchange="getSelectValue();">
-						<option value="class">Choose a class</option>
-						<option value="Cat-Warrior">Cat-Warrior</option>
-						<option value="Cat-Hunter">Cat-Hunter</option>
-						<option value="Cat-Priest">Cat-Priest</option>
-					</select>
-				</div>
+		<div class="container">
+			<div class="label">
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" placeholder="Character's name"> 
 			</div>
 			<div>
-				<img src="cat.jpg" alt="character">
-			</div>	
+				<p>Gender:</p>
+				<select id="list-1">
+					<option value="">Choose a gender</option>
+					<option value="Female">Female</option>
+					<option value="Male">Male</option>
+				</select>
+			</div>
+			<div>
+				<p>Race:</p>
+				<select id="list-2">
+					<option value="Race">Choose a race</option>
+					<option value="Cat-anoid">Cat-anoid</option>
+					<option value="Cat-dwarf">Cat-dwarf</option>
+					<option value="Cat-Elf">Cat-Elf</option>
+				</select>
+			</div>
+			<div>
+				<p>Class:</p>
+				<select id="list-3">
+					<option value="class">Choose a class</option>
+					<option value="Cat-Warrior">Cat-Warrior</option>
+					<option value="Cat-Hunter">Cat-Hunter</option>
+					<option value="Cat-Priest">Cat-Priest</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<img src="cat.jpg" alt="character">
+		</div>
+		<div>
 			<p id="values"></p>
-	</div>
-</body>
+			<div class="ertekek">				
+				<img src="female.png" id="female-image" alt="female">
+				<img src="male-gender.png" id="male-image" alt="male">
+				<img src="cat-anoid1.jpg" id="catanoid" alt="cat-anoid">
+				<img src="cat-dwarf1.jpg" id="catdwarf" alt="cat-dwarf">
+				<img src="cat-elf1.jpg" id="catelf" alt="cat-elf">
+				<img src="cat-warrior1.jpg" id="catwarrior" alt="cat-anoid">
+				<img src="cat-hunter1.jpg" id="cathunter" alt="cat-anoid">
+				<img src="cat-priest1.jpg" id="catpriest" alt="cat-anoid">
+			</div>
+		</div>
+	</body>
 </html>
